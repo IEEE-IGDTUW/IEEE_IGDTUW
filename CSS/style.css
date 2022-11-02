@@ -118,8 +118,13 @@ font-size: 1.25rem;
   margin-left: -27%;
 }
 
+.carousel-control-prev-icon{
+  filter: invert(100%);
+
+}
+
 .carousel-control-next-icon{
-  color: #010101;
+  filter: invert(100%);
 }
 
 
@@ -164,7 +169,8 @@ font-style: normal;
 	letter-spacing: normal;
 	line-height: 1.3em;
   margin-right: 1.25rem;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: 'Poppins';
+font-style: normal;
 	
 }
 
