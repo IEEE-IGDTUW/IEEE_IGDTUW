@@ -17,8 +17,23 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-------------Bootstrap CDN-------------->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
     <!-- Google Fonts  -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-------------Google Fonts-------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&&display=swap" rel="stylesheet">
+
     <!-- Body font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <!-- Navbar font -->
@@ -35,6 +50,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <!-- <link rel="stylesheet" href="css/event.css"> -->
+    <!-- <link rel="stylesheet" href="event.css"> -->
     <!-- Skin CSS -->
     <link rel="stylesheet" href="css/skin/cool-gray.css">
     <!--<link rel="stylesheet" href="css/flexslider.css">-->
@@ -50,123 +66,69 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#main-navbar">
-    <div class="page-loader"></div> <!-- Display loading image while page loads -->
-    <div class="body">
 
-        <!--========== BEGIN HEADER ==========-->
-        <header id="header" class="header-main">
 
-            <!-- Begin Navbar -->
-            <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+<!--================OUR RECENT EVENTS=============================-->
 
-                <div class="container">
+<!-- navbar -->
 
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <ul class="nav navbar-nav navbar-left"> <a class="navbar-brand" href="/index.html">
-                                <div class="logo-image">
-                                    <img src="img/LOGOBW.png"
-                                        style="position: absolute; width: 105px; height: 50px; margin-top: -15px;"
-                                        class="img-fluid">
-                                </div>
-                            </a></ul>
-                    </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"> <img src="images\logo.png" id="logoieee"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html#about">About</a></li>
-                            <!--<li><a href="">WIE IGDTUW</a></li>-->
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="achievements.html">Achievements</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="newsletter.html">Newsletter</a></li>
-                            <li><a href="timeline.html">IEEE WEEK 6.0</a></li>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
 
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container -->
-            </nav>
-            <!-- End Navbar -->
 
-        </header>
-        <!-- ========= END HEADER =========-->
 
-        <!--================OUR RECENT EVENTS=============================-->
 
-        <body>
-            
-        
-            <!-- Begin counter up -->
-            <!-- <section id="counter-section" style="padding-top: 50px ;">
-                <div id="counter-up-trigger" class="counter-up text-white parallax" data-stellar-background-ratio="0.5"
-                    style="background-image: url(img/counter-bg.jpg);">
-                    <div class="cover"></div>
-                    Begin page header
-                    <div class="page-header-wrapper">
-                        <div class="container">
-                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                                <h2>Few intersting Stats</h2>
-                                <div class="devider"></div>
-                                <p class="subtitle">Before anyone is not told</p>
-                            </div>
-                        </div>
-                    </div>
-                    End page header-->
-            <!-- <div class="container">
-                        <div class="row">
-                            <div class="fact text-center col-md-3 col-sm-6">
-                                <div class="fact-inner">
-                                    <i class="fa fa-users fa-3x"></i>
-                                    <div class="extra-space-l"></div>
-                                    <span class="counter">200</span>
-                                    <p class="lead">Team Members</p>
-                                </div>
-                            </div> -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="events.html">Event</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
 
-            <!-- <div class="fact text-center col-md-3 col-sm-6">
-                                <div class="fact-inner">
-                                    <i class="fa fa-leaf fa-3x"></i>
-                                    <div class="extra-space-l"></div>
-                                    <span class="counter">800</span>
-                                    <p class="lead">Completed Projects</p>
-                                </div>
-                            </div>
-                            <div class="fact text-center col-md-3 col-sm-6">
-                                <div class="fact-inner">
-                                    <i class="fa fa-trophy fa-3x"></i>
-                                    <div class="extra-space-l"></div>
-                                    <span class="counter">55</span>
-                                    <p class="lead">Winning Awards</p>
-                                </div>
-                            </div> -->
 
-            <!-- <div class="fact last text-center col-md-3 col-sm-6">
-                                <div class="fact-inner">
-                                    <i class="fa fa-coffee fa-3x"></i>
-                                    <div class="extra-space-l"></div>
-                                    <span class="counter">60</span>
-                                    <p class="lead">Sessions conducted</p>
-                                </div>
-                            </div>
-                        </div> </.row -->
-            <!-- </div> /.container -->
+
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">
+                    <button class="ieeeWeek">IEEE Week</button>
+                </a>
+            </li>
+
+
+        </ul>
+
+
     </div>
-    </section>
-    <!-- End counter up -->
+</nav>
+
+
+
+
+
+<!-- navbar ends  -->
+
+<body>
+
+
 
     <!-- Begin Portfolio -->
-    <section id="portfolio-section" class="page bg-style1" >
+    <section id="portfolio-section" class="page bg-style1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -203,7 +165,9 @@
                                                 <a>PLACEMENT TALK</a>
                                                 <br>
                                                 <span>
-                                                    IEEE IGDTUW in collaboration with Rotaract NSIT is hosting "PLACEMENT TALK" session to address any issues you may have regarding placements. 💠
+                                                    IEEE IGDTUW in collaboration with Rotaract NSIT is hosting
+                                                    "PLACEMENT TALK" session to address any issues you may have
+                                                    regarding placements. 💠
                                                     <br>
                                                     <a href='https://www.instagram.com/p/CZmU9Q2J9vE/?hl=en'><button
                                                             class="button1">Read More</button></a>
@@ -1332,80 +1296,11 @@
  PUT YOUR CODE HERE
             =========================================================================================================================-->
 
-<!-- Begin footer -->
-<footer class="text-off-white">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row wow bounceInLeft" data-wow-delay="0.4s">
-                <div class="col-sm-6 col-md-4 cd">
-                    <h4>Meet us At</h4>
-                    <p style="padding-block: 2">
-                        Indira Gandhi Delhi Technical University for Women, New Church
-                        Rd, Opp. St James Church, Kashmere Gate, Delhi 110006
-                        <br />
-                        Mail us at- <br />
-                        <i class="fas fa-envelope" style="margin-right: 5px"></i><a href="mailto:igdtuieee@gmail.com"
-                            class="contact-email">igdtuieee@gmail.com</a>
-                    </p>
-                    <div class="media-icons">
-                        <a href="https://www.facebook.com/ieeeigdtuw/" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/ieeeigdtuw/?igshid=vkkkocbwtcjc&hl=en" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/ieee-igdtuw/?originalSubdomain=in" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
 
-                        <a href="https://t.me/joinchat/qv4BIBIyrQRhM2Q1" target="_blank">
-                            <i class="fab fa-telegram-plane"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 cd">
-                    <h4>Useful Links</h4>
-                    <ul class="imp-links">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="">WIE IGDTUW</a></li>
-                        <li>
-                            <a href="achievements.html">Achievements</a>
-                        </li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="index.html#cta-section">Newsletter</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-sm-6 col-md-4 cd">
-                    <h4>For any queries-</h4>
-                    <p style="padding-block: 2;">
-                        <a class="membership-link" href="contact.html">Contact Us</a>
-                        <br>
-                        <br>
-                        For any query, mail us at- @igdtuieee@gmail.com
-                    </p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </div>
+<!-- <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a>  -->
 
-    <div class="footer">
-        <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
-            <p class="theme-author">
-                Copyright &copy; <a href="" class="Copyright">IEEE IGDTUW</a> All
-                rights reserved
-            </p>
-        </div>
-    </div>
-</footer>
-<!-- End footer -->
 
-<a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
-
-</div><!-- body ends -->
 
 
 
@@ -1426,8 +1321,100 @@
 
 <!-- Theme JS -->
 <script src="js/theme.js"></script>
-<link rel=¨stylesheet¨ type=¨text/css¨ href=¨..\CSS\events.css¨>
+
 </body>
+
+<!-- Site footer -->
+<footer class="footer-section">
+    <div class="container">
+  
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <h4 style="color:#6889FF;">Meet Us At </h4>
+              </div>
+              <div class="footer-text">
+                <p class="footer-widget">Indira Gandhi Delhi Technical University for Women,
+                  New Church Rd, Opp. St James Church, Kashmere Gate,
+                  Delhi 110006</p>
+              </div>
+  
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="https://igdtuw19ieee.github.io/IEEEIGDTUW2021/newsletter.html">Newsletter</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="ieee_week.html">IEEE WEEK</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Contact Us</h3>
+              </div>
+              <div class="footer-text mb-25">
+  
+              </div>
+  
+              <form action="mailto:igdtuieee@gmail.com" method="post">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">
+                    <img src="images\name.png">
+                  </span>
+                  <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                    aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">
+                    <img src="images\mail.png">
+                  </span>
+                  <input type="text" class="form-control" placeholder="E-mail id" aria-label="E-mail id"
+                    aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping"><img src="images\msg.png"></span>
+                  <input type="text" class="form-control" placeholder="Message" aria-label="Message"
+                    aria-describedby="addon-wrapping">
+                </div>
+  
+                <input type="submit" class="btn btn-primary fields submit" style="width:100%; margin-top: 1.5rem;">
+                <br>
+  
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2022, All Right Reserved by IEEE IGDTUW</a></p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </html>
