@@ -1,3 +1,12 @@
+var burger = document.getElementsByClassName('burger');
+
+burger[0].addEventListener('click', () => {
+  // alert("Hello world!");
+  var parent = document.getElementsByClassName('parent');
+  parent[0].classList.toggle('parent-resp');
+})
+
+
 function resetAll() {
     var all_containers = document.getElementsByClassName("container");
     for(var i = 0; i < all_containers.length; i++){
