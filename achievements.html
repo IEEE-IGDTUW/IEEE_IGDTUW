@@ -32,6 +32,63 @@
 
 <body>
 
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"> <img src="images\logo.png" id="logoieee"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+
+
+
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="achievements.html">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Team</a>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">
+            <button class="ieeeWeek">IEEE Week</button>
+          </a>
+        </li>
+
+
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+
+
+
+  <!--  -->
+
+
+
+
+
   <!-------------------------Heading section-------------------------->
   <div class="heading">
     <h>
@@ -39,22 +96,34 @@
     </h>
   </div>
   <div class="subheading">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quidem, veritatis veniam delectus dolorem. Maxime consectetur nam quisquam dolores fugit?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quidem, veritatis veniam delectus dolorem. Maxime
+      consectetur nam quisquam dolores fugit?</p>
+  </div>
+
+
+  <div class="burger" onclick="trialFunc()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
   </div>
 
 
 
-  <div class='parent'>
+  <div class='parent parent-resp'>
     <div class='child'><a href="#awards-all" onclick="resetAll()">ALL</a></div>
     <div class='child'><a href="#award-ceremony-2022" onclick="pagination2022()">2022</a></div>
     <div class='child'><a href="#award-ceremony-2020" onclick="pagination2020()">2020</a></div>
     <div class='child'><a href="#award-ceremony-2019" onclick="pagination2019()">2019</a></div>
     <div class='child'><a href="#award-ceremony-2018" onclick="pagination2018()">2018</a></div>
   </div>
-  
+
+  <!-- <div class="menu-resp"> -->
+
+  <!-- </div> -->
+
 
   <!-------------------------Awards section-------------------------->
-  <section id="awards-all">
+  <section id="awards-all" class="awards-margin">
     <div class="container hide-when-2020 hide-when-2019 hide-when-2018" id="award-ceremony-2022">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Award Ceremony 2022</p>
@@ -75,7 +144,8 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Rashmi_WIE-General-Secretery_resized2.jpg" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Rashmi_WIE-General-Secretery_resized2.jpg"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0">
               <h5 class="card-title">Rashmi Saini</h5>
@@ -88,7 +158,8 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Aastha_Bansal-IEEE_Vice_Chair_resized2.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Aastha_Bansal-IEEE_Vice_Chair_resized2.jpeg"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0" style="padding-bottom: 40px;">
               <h5 class="card-title">Aastha Bansal</h5>
@@ -101,7 +172,8 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Pallavi Singh-WIE Vice Chair_resized2.jpg" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Pallavi Singh-WIE Vice Chair_resized2.jpg"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0" style="padding-bottom: 40px;">
               <h5 class="card-title">Pallavi</h5>
@@ -123,12 +195,14 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized2.png" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized2.png"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0">
               <h5 class="card-title">Dr. Jasdeep Kaur Dhanoa</h5>
               <h6 class="card-subtitle">Branch Counselor</h6>
-              <p class="card-text">Received prolong Excellence Award IEEE IGDTUW under the guidance of Dr. Jasdeep Kaur Dhanoa</p>
+              <p class="card-text">Received prolong Excellence Award IEEE IGDTUW under the guidance of Dr. Jasdeep Kaur
+                Dhanoa</p>
 
             </div>
           </div>
@@ -245,7 +319,7 @@
     <div class="container hide-when-2022 hide-when-2020 hide-when-2019 hide-when-2018">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section WIE Affinity Group Award</p>
-      <div class="row" >
+      <div class="row">
         <div class="col-md-4 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
@@ -296,12 +370,14 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized3.png" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized3.png"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0" style="padding-bottom: 58px;">
               <h5 class="card-title">Dr. Jasdeep Kaur Dhanoa</h5>
               <h6 class="card-subtitle">Branch Counselor</h6>
-              <p class="card-text">Was awarded for her extraordinary contribution and dedication towards IEEE Delhi Section</p>
+              <p class="card-text">Was awarded for her extraordinary contribution and dedication towards IEEE Delhi
+                Section</p>
 
             </div>
           </div>
@@ -331,7 +407,8 @@
             <div class="card-body pt-0" style="padding-bottom: 41px;">
               <h5 class="card-title">Pearl Pullan</h5>
               <h6 class="card-subtitle">ECE Batch 2015-2019</h6>
-              <p class="card-text">Received the Outstanding Student Volunteer Award during the IEEE Delhi Section. She was the WIE Chairperson for the 2018-19 session.</p>
+              <p class="card-text">Received the Outstanding Student Volunteer Award during the IEEE Delhi Section. She
+                was the WIE Chairperson for the 2018-19 session.</p>
 
             </div>
           </div>
@@ -359,7 +436,8 @@
 
     <div class="container hide-when-2022 hide-when-2020 hide-when-2019 hide-when-2018">
       <!-------------------------Row heading----------------------------->
-      <p class="row-sub-heading">The following members were appreciated for their enormous contribution in IEEE Delhi Section Student Network:</p>
+      <p class="row-sub-heading">The following members were appreciated for their enormous contribution in IEEE Delhi
+        Section Student Network:</p>
       <div class="row">
         <div class="col-md-4 mt-4">
           <div class="card profile-card-5">
@@ -413,7 +491,8 @@
         <div class="col-md-3 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
-              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized2.png" alt="Card image cap">
+              <img class="card-img-top" src="Assets\achievements\Dr Jasdeep Kaur Dhanoa_resized2.png"
+                alt="Card image cap">
             </div>
             <div class="card-body pt-0">
               <h5 class="card-title">Dr. Jasdeep Kaur Dhanoa</h5>
@@ -432,7 +511,8 @@
             <div class="card-body pt-0" style="padding-bottom: 23px;">
               <h5 class="card-title">Diksha Vasudev</h5>
               <h6 class="card-subtitle">ECE Batch 2015-2019</h6>
-              <p class="card-text">Was appreciated for her enormous contribution as a Section Student Representative.</p>
+              <p class="card-text">Was appreciated for her enormous contribution as a Section Student Representative.
+              </p>
 
             </div>
           </div>
@@ -472,10 +552,104 @@
 
   </section>
 
+  <hr>
+  
 
-<!--------------------- Achievements JS ----------------------->
-<script src="js/achievements.js"></script>
+  <!--------------------- Achievements JS ----------------------->
+  <script src="js/achievements.js"></script>
 
 </body>
+
+<!-- Site footer -->
+<footer class="footer-section">
+  <div class="container">
+
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <h4 style="color:#6889FF;">Meet Us At </h4>
+            </div>
+            <div class="footer-text">
+              <p class="footer-widget">Indira Gandhi Delhi Technical University for Women,
+                New Church Rd, Opp. St James Church, Kashmere Gate,
+                Delhi 110006</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="https://igdtuw19ieee.github.io/IEEEIGDTUW2021/newsletter.html">Newsletter</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="ieee_week.html">IEEE WEEK</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Contact Us</h3>
+            </div>
+            <div class="footer-text mb-25">
+
+            </div>
+
+            <form action="mailto:igdtuieee@gmail.com" method="post">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">
+                  <img src="images\name.png">
+                </span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                  aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">
+                  <img src="images\mail.png">
+                </span>
+                <input type="text" class="form-control" placeholder="E-mail id" aria-label="E-mail id"
+                  aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><img src="images\msg.png"></span>
+                <input type="text" class="form-control" placeholder="Message" aria-label="Message"
+                  aria-describedby="addon-wrapping">
+              </div>
+
+              <input type="submit" class="btn btn-primary fields submit" style="width:100%; margin-top: 1.5rem;">
+              <br>
+
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2022, All Right Reserved by IEEE IGDTUW</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>
