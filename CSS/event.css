@@ -17,13 +17,12 @@
   font-style: normal;
 }
 .page-event {
-  background-color: #fff8f8;
+  background-color: #212121;
   padding-bottom: 40px;
   font-family: "Varela Round", sans-serif;
 }
 .page-event .cover {
-  background-color: #eff3f7;
-  color: white;
+  background-color: #36353a;
   height: 360px;
   background-image: url('https://goo.gl/NA3iQP');
   background-position: center center;
@@ -36,7 +35,7 @@
   text-transform: uppercase;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: white;
+  -moz-osx-font-smoothing: grayscale;
   color: #ccc;
   transition: font-size 0.3s;
 }
