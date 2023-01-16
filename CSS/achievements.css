@@ -1,8 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Navbar CSS */
+#logoieee {
+  height: 40%;
+  width: 30%;
+  margin-left: 12%;
+  ;
+
+}
+
+.ieeeWeek {
+  background-color: white;
+  color: black;
+  width: 140%;
+  height: 100%;
+  border-style: none;
+  border-radius: 17px;
+  /* margin-top: 5%; */
+  border: 1px solid #c9e0f5;
+  font-family: 'Poppins';
+  font-style: normal;
+
+}
+
+#navbarSupportedContent {
+  margin-right: 14%;
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+#navbarSupportedContent li {
+  display: inline;
+}
+
+#navbarSupportedContent a {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.3em;
+  margin-right: 20px;
+  font-family: 'Smooch Sans', sans-serif;
+
+}
+
+#navbarSupportedContent a:hover {
+  color: rgb(14, 85, 227);
+  text-decoration: underline;
+}
+
+.ieeeWeek:hover {
+  border-color: #0083FF;
+}
+
+
+.events:hover {
+  background-color: #0083FF;
+  transform: scale(1.2);
+}
+
+.learnmore:hover {
+  transform: scale(1.2);
+  border-color: #0083FF;
+}
+
 /* Heading section CSS */
 .heading {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  /* margin-top: 10%; */
+  margin-top: 8%;
 }
 
 .heading h {
@@ -34,17 +104,21 @@
 
 
 .parent {
+  /* display: flex; */
+  /* flex-direction: row; */
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
+  transition: display 5s ease-out;
 }
+
 .child {
   display: inline-block;
   padding: 1rem 1rem;
   margin: 2px;
-} 
+}
 
-.child a{
+.child a {
   text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
@@ -58,56 +132,124 @@
   border: 1px solid black;
 }
 
-.child a:hover{
+.child a:hover {
   text-decoration: none;
   background: #6889FF;
   border-radius: 20px;
   color: #F5F5F5;
 }
 
+/* .menu-resp{
+  margin: auto;
+  background-color: darkgoldenrod;
+} */
+.burger {
+  display: none;
+  /* position: absolute; */
+  width: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: darkmagenta; */
+  /* align-items: center; */
+  /* justify-self: center; */
+  cursor: pointer;
+  padding: 3px;
+  /* left:  0; */
+  /* right: 0; */
+  /* margin: auto; */
+  border-radius: 5px;
+  border: solid 1px lightsteelblue;
+}
+
+.line {
+  /* align-self: center; */
+  background-color: #0083FF;
+  width: 33px;
+  height: 4px;
+
+  margin: 3px auto 3px auto;
+}
+
+/* .burger:hover{
+  background-color: #0083FF;
+  color: white;
+} */
 
 
-@media only screen and (max-width: 983px){
-  .subheading p{
+
+@media only screen and (max-width: 917px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child {
+    margin: -7px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .parent-resp {
+    display: none;
+  }
+
+  /* .h-div-resp{
+    height: 2px;
+  } */
+
+  /* .vis-class-resp{
+    opacity: 0;
+  } */
+}
+
+@media only screen and (max-width: 983px) {
+  .subheading p {
     font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 817px){
-  .subheading p{
+@media only screen and (max-width: 817px) {
+  .subheading p {
     font-size: 10px;
   }
 }
-  
-  @media only screen and (max-width: 279){
-    .subheading p{
-        font-size: 8px;
-    }
-  }
-      
 
-  @media only screen and (max-width: 586px){
-    .heading h{
-      font-size: 40px;
-    }
+@media only screen and (max-width: 279) {
+  .subheading p {
+    font-size: 8px;
   }
-      
-  @media only screen and (max-width: 450px){
-    .heading h{
-      font-size: 30px;         
-    }
-  }
+}
 
-  @media only screen and (max-width: 266px){
-    .heading h{
-      font-size: 25px;           
-    }
-  } 
-      
+
+@media only screen and (max-width: 586px) {
+  .heading h {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .heading h {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 266px) {
+  .heading h {
+    font-size: 25px;
+  }
+}
+
 
 /* Awards section CSS */
 
-.row-sub-heading{
+.awards-margin{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.row-sub-heading {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -119,62 +261,69 @@
   margin-top: 50px;
 }
 
-.row{
+.row {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-.column{
+.column {
   padding-bottom: 5%;
   border-radius: 25px;
 }
 
-section{
-  float:left;
-  width:100%;
-  background: #fff;  /* fallback for old browsers */
-  padding:30px 0;
+/* section {
+  float: left;
+  width: 100%;
+  background: #fff;
+
+  padding: 30px 0;
+} */
+
+.profile-card-5 {
+  margin-top: 20px;
 }
 
-.profile-card-5{
-  margin-top:20px;
+.profile-card-5 .btn {
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 20px;
 }
-.profile-card-5 .btn{
-  border-radius:2px;
-  text-transform:uppercase;
-  font-size:12px;
-  padding:7px 20px;
-}
+
 .profile-card-5 .card-img-block {
   width: 91%;
   margin: 0 auto;
   position: relative;
   top: -20px;
-  
-}
-.profile-card-5 .card-img-block img{
-  border-radius:5px;
-  box-shadow:0 0 10px rgba(0,0,0,0.63);
-}
-.profile-card-5 h5{
-  color:#4E5E30;
-  font-weight:600;
-}
-.profile-card-5 p{
-  font-size:14px;
-  font-weight:300;
-}
-.profile-card-5 .btn-primary{
-  background-color:#4E5E30;
-  border-color:#4E5E30;
+
 }
 
-.profile-card-5 .card-title{
+.profile-card-5 .card-img-block img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+  color: #4E5E30;
+  font-weight: 600;
+}
+
+.profile-card-5 p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-card-5 .btn-primary {
+  background-color: #4E5E30;
+  border-color: #4E5E30;
+}
+
+.profile-card-5 .card-title {
   font-family: 'Poppins', sans-serif;
   color: #0083FF;
 }
 
-.profile-card-5 .card-subtitle{
+.profile-card-5 .card-subtitle {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: black;
@@ -182,7 +331,7 @@ section{
   font-weight: bold;
 }
 
-.profile-card-5 .card-text{
+.profile-card-5 .card-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: black;
@@ -190,13 +339,13 @@ section{
 
 }
 
-.profile-card-5 .card-title-3{
+.profile-card-5 .card-title-3 {
   font-family: 'Poppins', sans-serif;
   color: #0083FF;
   text-align: center;
 }
 
-.profile-card-5 .card-subtitle-3{
+.profile-card-5 .card-subtitle-3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: black;
@@ -206,11 +355,111 @@ section{
 }
 
 @media only screen and (max-width: 766px) {
-  .card-body{
+  .card-body {
     padding-bottom: 20px !important;
   }
 }
 
 
+/* Footer CSS */
 
 
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: white;
+  position: relative;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-logo h4 {
+  color: #6889FF;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  line-height: 24px;
+}
+
+.footer-widget-heading h3 {
+  color: #6889FF;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #3C4048;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.copyright-area {
+
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(123, 114, 114);
+  font-weight: 3 rem;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+  font-weight: 2rem;
+}
