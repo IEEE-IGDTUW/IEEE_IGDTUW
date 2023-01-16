@@ -160,12 +160,12 @@ ul {
 .copyright-text{
     text-align: center;
 }
-a:link{
+.linksfooter>a:link{
     color: #777C8D;
 }
-a:hover {
+.linksfooter>a:hover {
     color:#6889FF;
   }
-a:visited{
+.linksfooter>a:visited{
     color: #777C8D;
 }
