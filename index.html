@@ -2,424 +2,299 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css'>
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- font awesome -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="CSS\style.css">
-
-  <title>IEEE IGDTUW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link href="index.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-
-
-
-  <!-- navbar -->
-
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"> <img src="images\homepage\logo.png" id="logoieee"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto ">
-
-
-
-
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Event</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
-        </li>
-
-
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="ieee_week.html">
-            <button class="ieeeWeek">IEEE Week</button>
-          </a>
-        </li>
-
-
-      </ul>
-
-
+  <nav class="navbar navbar-expand-lg" style="margin-bottom: 3rem;">
+    <div class="container-fluid">
+      <img src="img/viewport.png" style="width: 10rem;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="padding-right: 2.3rem;">Team</a>
+          </li>
+          <li>
+            <button type="button" class="btn  btn-outline-primary" style="border-radius:40px; width:8rem ">IEEE Week
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="topdiv">
+          <div class="test1">
+            Engineers
+            <br>
+            Build,
+            <br>
+            <span style="color: #0083FF;">Inspire</span> &
+            <br>
+            Engage.
+          </div>
+          <br>
+          <div class="flex-container">
+            <button type="button" class="btn btn-primary btt"
+              style="background-color:#0083FF;margin-right:2rem;border-radius: 40px;">About Us</button>
+            <button type="button" class="btn btn-secondary btt"
+              style="background-color:#ffffff;border-radius: 40px;color: black;border-color: #0083FF">Learn More</button>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="pics">
+          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/10.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/6.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/7.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/9.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 
 
-  <!--  -->
+  <div class="top-text">
+    <h2 style="font-weight: 400;">What are We</h2>
+    <p> IEEE IGDTUW is the student branch of IEEE of Indira Gandhi Delhi Technical University for Women that comes
+      under
+      the Region 10 of Delhi Section. It runs on the principle IEEE, that is, advancing technology for humanity.</p>
 
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="img/viewport.png" id="logo">
+        <h3 class="card-title"><span style="color:#277BC0;">IEEE</span> IGDTUW</h3>
+        <p class="card-text">IEEE IGDTUW started off with its inspiring journey as IEEE IGIT,
+          inaugurated on 6th February 2004 with around 33 members.
+          Now the student branch of IEEE IGDTUW has a strength of about 200 active members.
+          Stepping beyond the common perceptions.</p>
+      </div>
+      <div class="col">
+        <img src="img/image 2.jpg" style="width: 10rem; padding-top: 1.6rem;">
+        <h3 class="card-title"><span style="color:#277BC0;">WIE</span> IGDTUW</h3>
+        <p class="card-text"> We at IEEE WIE IGDTUW, aim to motivate young girls to take up technical roles in the
+          society
+          and lead their life as confident individuals while leaving a positive impact on the society.
+          To achieve our goal,IEEE WIE IGDTUW puts in persistent efforts throughout the year with the
+          help of various activities.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center">
+    <div class="top-text">
+      <h2>How We Work</h2>
+      <p style="margin-top: 2rem;">
+        "We at IEEE IGDTUW aim to motivate girls to take up technical
+        roles in the society and lead life as confident individuals while leaving
+        a positive impact on the society.
+        We try our best to keep the students of our college updated
+        about the advancements in technology by conducting several
+        events and workshops".
+
+      </p>
+    </div>
+
+    
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="outer-container">
+          <div class="inner-circle"></div>
+          <div class="icon">
+            <img src="img/Vector.png">
+          </div>
+        </div>
+        <div class="textpart">
+          <h3 class="mb-4 text-2xl">Sessions</h3>
+
+          <p>Amazing sessions making you aware about the latest technology</p>
+        </div>
+      </div>
+
+
+      <div class="col-sm">
+        <div class="outer-container">
+          <div class="inner-circle"></div>
+          <div class="icon">
+            <img src="img/Vector (1).png">
+          </div>
+        </div>
+
+        <div class="textpart">
+          <h3 class="mb-4 text-2xl">Hackathons</h3>
+
+          <p>What's better than a hackathon to test your coding skills, We organize Hackathons to provide you the
+            oppurtunity
+
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="outer-container">
+          <div class="inner-circle"></div>
+          <div class="icon">
+            <!--     Add icon here -->
+            <img src="img/Vector (2).png">
+          </div>
+        </div>
+        <div class="textpart">
+          <h3 class="mb-4 text-2xl">Workshops </h3>
+          <p>When you see, you learn better and faster. Introducing amazing workshops with experts to make you know
+            things better
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+<hr style="color: #0083FF;">
+<footer>
 
   <div class="row">
-    <div class="col" id="upperText">
-      <div class="test1">
-        Engineers
-        <br>
-        Build,
-        <br>
-        <span style="color: #0083FF;">Inspire</span> &
-        <br>
-        Engage.
-      </div>
-      <br>
+    <div class="col-sm">
+      <h5 class="footer-heading">Meet Us At</h5>
+      <p style="width: 80%; padding-left: 3rem;">
+        Indira Gandhi Delhi Technical University for Women, New Church Rd, Opp. St James Church, Kashmere Gate, Delhi
+        110006
+      </p>
+    </div>
 
-
-
-      <div id="lowerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laborum debitis maxime
-        placeat aspernatur ipsam minima, error incidunt aliquid tempore Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Hic repudiandae ad dolores temporibus quasi blanditiis qui, natus adipisci magnam consequatur.
-        <br>
-<div class="buttonspage" style="margin-top: 2rem;">
-        <button class="button button-dark" style="padding-right:3rem;
-        background-color:#0083FF; 
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px; border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        color: white;  height: 3rem; width: 10rem;">
-          Events
-        </button>
-        <button class="button button-positive" style="background-color:#0083FF; color: white;border-top-right-radius: 25px;
-        border-top-left-radius: 25px; border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-          height: 3rem; width: 10rem;" >
-          Learn More
-        </button>
-      </div>
-</div>
-
-<!--
+    <div class="col-sm">
+      <h5 class="footer-heading">Useful Links</h5>
 
       <div class="row">
-        <div class="col">
-          <button class="events">Events</button>
+        <div class="col-sm">
+          <ul style="text-align: left;" class="links">
+            <li><a href="#" style="text-decoration: none;">About Us</a></li>
+            <LI><a href="#" style="text-decoration: none;">WIE IGDTUW</a></LI>
+            <li><a href="#" style="text-decoration: none;">Achievements</a></li>
+          </ul>
         </div>
-        <div class="col">
-          <button class="learnmore" id="learnmoreid">Learn more</button>
-        </div>
-      </div>
-
-    -->
-  
-
-    </div>
-
-    <div class="col">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" id="myCarousel">
-        <div class="carousel-inner" id="myCarousel">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images\homepage\4.png" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\5.jpg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\6.jpeg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\7.jpeg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\8.jpg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\9.jpeg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\10.jpg" alt="First slide" id="myCarousel">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images\homepage\11.jpeg" alt="First slide" id="myCarousel">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="false"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="top-part">
-
-    <h2>What Are We</h2>
-    <p>
-      IEEE IGDTUW is the student branch of IEEE of Indira Gandhi
-      Delhi Technical University for Women that comes under the
-      Region 10 of Delhi Section. It runs on the principle IEEE,
-      that is, advancing technology for humanity.
-    </p>
-  </div>
-
-  <div class="mid-part">
-
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card" style="border:0rem;">
-          <img id="logo" src="images\homepage\logo.png" class="card-img-top" alt="logo">
-          <div class="card-body">
-            <h3 class="card-title"><span style="color:#277BC0;">IEEE</span> IGDTUW</h3>
-            <p class="card-text">IEEE IGDTUW started off with its inspiring journey as IEEE IGIT,
-              inaugurated on 6th February 2004 with around 33 members.
-              Now the student branch of IEEE IGDTUW has a strength of about 200 active members.
-              Stepping beyond the common perceptions.</p>
-          </div>
+        <div class="col-sm">
+          <ul style="text-align: left;" class="links">
+            <li><a href="#" style="text-decoration: none;">Events</a></li>
+            <li> <a href="#" style="text-decoration: none;">Newsletter</a></li>
+            <li> <a href="#" style="text-decoration: none;">Our Team</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="border:0rem;">
-          <img id="wee" src="images\homepage\image 2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title"><span style="color:#277BC0;">WIE</span> IGDTUW</h3>
-            <p class="card-text"> We at IEEE WIE IGDTUW, aim to motivate young girls to take up technical roles in the society
-              and lead their life as confident individuals while leaving a positive impact on the society.
-              To achieve our goal,IEEE WIE IGDTUW puts in persistent efforts throughout the year with the
-              help of various activities.</p>
-          </div>
+
+
+
+    </div>
+
+    <div class="col-sm">
+      <h5 class="footer-heading">Contact Us</h5>
+      <form action="mailto:igdtuieee@gmail.com" method="post">
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">
+            <img src="img/man.png">
+          </span>
+          <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+            aria-describedby="addon-wrapping">
         </div>
-      </div>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">
+            <img src="img/email.png">
+          </span>
+          <input type="text" class="form-control" placeholder="E-mail id" aria-label="E-mail id"
+            aria-describedby="addon-wrapping">
+        </div>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping"><img src="img/mail.png"></span>
+          <input type="text" class="form-control" placeholder="Message" aria-label="Message"
+            aria-describedby="addon-wrapping">
+        </div>
+
+        <input type="submit" class="btn btn-primary fields submit" style="width:100%; margin-top: 1.5rem;">
+        <br>
+
+
+      </form>
+
     </div>
   </div>
 
+  <br>
+  <p style="margin-top:5rem">Copyright &copy 2023, All Right Reserved by IEEE IGDTUW</p>
 
-  <div class="bottom">
 
-    <h2>How We Work</h2>
-    <p class="bottom">
-      "We at IEEE IGDTUW aim to motivate girls to take up technical
-      roles in the society and lead life as confident individuals while leaving
-      a positive impact on the society.
-      We try our best to keep the students of our college updated
-      about the advancements in technology by conducting several
-      events and workshops".
-
-    </p>
-    
-  </div>
-<section class="textc">
-  <div class="flex flex-wrap -m-3"> 
-  
-    <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-      <div class="bg-white rounded-lg overflow-hidden flex-1 flex flex-col">
-        <div class="bg-cover h-60">
-          <div class="outer-container">
-    <div class="inner-circle"></div>
-    <div class="icon">
-  <!--     Add icon here -->
-  <img src="images\homepage\entypo_modern-mic.png">
-    </div>
-  </div>
-        </div>
-        <div class="p-4 flex-1 flex flex-col" >
-          <h3 class="mb-4 text-2xl">Sessions</h3>
-          <div class="mb-4 text-grey-darker text-sm flex-1">
-            <p>Amazing sessions making you aware about the latest technology</p>
-          </div>
-        </div>
-      </div>  
-    </div>
-    
-    <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-      <div class="bg-white rounded-lg overflow-hidden flex-1 flex flex-col">
-        <div class="bg-cover h-60">
-          <div class="outer-container">
-    <div class="inner-circle"></div>
-    <div class="icon">
-  <!--     Add icon here -->
-  <img src="images\homepage\Vector.png">
-    </div>
-  </div>
-        </div>
-        <div class="p-4 flex-1 flex flex-col" >
-          <h3 class="mb-4 text-2xl">Hackathons</h3>
-          <div class="mb-4 text-grey-darker text-sm flex-1">
-            <p>What's better than a hackathon to test your coding skills, We organize Hackathons to provide you the oppurtunity
-  
-  .</p>
-          </div>
-          
-        </div>
-      </div>  
-    </div>
-    
-    <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-      <div class="bg-white rounded-lg overflow-hidden flex-1 flex flex-col">
-        <div class="bg-cover h-60">
-           <div class="outer-container">
-    <div class="inner-circle"></div>
-    <div class="icon">
-  <!--     Add icon here -->
-  <img src="images\homepage\Vector(1).png">
-    </div>
-  </div>
-        </div>
-        </div>
-       
-    
-     <div class="p-3 flex-2 flex flex-col">
-          <h3 class="mb-4 text-2xl">Workshops </h3>
-          <div class="mb-4 text-black text-sm flex-1">
-            <p>When you see, you learn better and faster. Introducing amazing workshops with experts to make you know things better
-  
-  .</p>
-          </div>
-          
-        </div>
-      </div>  
-    </div>
-    
-      
-  </div>
-</section>
-  <!-- partial -->
-    
-    
-  
-  <hr>
-</body>
-  <!-- Site footer -->
-  <footer class="footer-section">
-    <div class="container">
-     
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                          <h4 style="color:#6889FF;">Meet Us At </h4>
-                        </div>
-                        <div class="footer-text">
-                            <p  class="footer-widget">Indira Gandhi Delhi Technical University for Women,
-New Church Rd, Opp. St James Church, Kashmere Gate,
-Delhi 110006</p>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                           <li><a href="index.html">About Us</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="https://igdtuw19ieee.github.io/IEEEIGDTUW2021/newsletter.html">Newsletter</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="ieee_week.html">IEEE WEEK</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Contact Us</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            
-                        </div>
-                       
-                      <form action="mailto:igdtuieee@gmail.com" method="post">
-            <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping">
-                <img src="images\homepage\name.png">
-              </span>
-              <input type="text" class="form-control" placeholder="Name" aria-label="Name"
-                aria-describedby="addon-wrapping">
-            </div>
-            <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping">
-                <img src="images\homepage\mail.png">
-              </span>
-              <input type="text" class="form-control" placeholder="E-mail id" aria-label="E-mail id"
-                aria-describedby="addon-wrapping">
-            </div>
-            <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"><img src="images\homepage\msg.png"></span>
-              <input type="text" class="form-control" placeholder="Message" aria-label="Message"
-                aria-describedby="addon-wrapping">
-            </div>
-             
-            <input type="submit" class="btn btn-primary fields submit" style="width:100%; margin-top: 1.5rem;">
-            <br>
-    
-            
-          </form>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<hr>
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2022, All Right Reserved by IEEE IGDTUW</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
-<!-- partial -->
 
-</body>
+
+
+
 
 </html>
